@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alamre_cost *.css
+recursive-include alamre_cost *.csv
+recursive-include alamre_cost *.html
+recursive-include alamre_cost *.ico
+recursive-include alamre_cost *.js
+recursive-include alamre_cost *.json
+recursive-include alamre_cost *.md
+recursive-include alamre_cost *.png
+recursive-include alamre_cost *.py
+recursive-include alamre_cost *.svg
+recursive-include alamre_cost *.txt
+recursive-exclude alamre_cost *.pyc
