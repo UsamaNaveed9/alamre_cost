@@ -1,5 +1,4 @@
 
-{% include 'erpnext/selling/sales_common.js' %}
 
 frappe.ui.form.on("Sales Order", {
     setup: function(frm) {
@@ -37,4 +36,3 @@ erpnext.selling.SalesOrderController = erpnext.selling.SellingController.extend(
 	},
 
 });
-$.extend(cur_frm.cscript, new erpnext.selling.SalesOrderController({frm: cur_frm}));
