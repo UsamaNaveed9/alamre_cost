@@ -175,3 +175,4 @@ user_data_fields = [
 # 	"alamre_cost.auth.validate"
 # ]
 
+fixtures = ["Custom Field"]
