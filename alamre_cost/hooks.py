@@ -34,9 +34,10 @@ app_license = "MIT"
 doctype_js = {
 	"Sales Order" : "customjs/sales_order.js"
 	}
+	
 doctype_list_js = {
 	"Sales Order" : "customjs/list_setting.js",
-	"Sales Invoice": "customjs/list_setting.js"
+	"Sales Invoice": "customjs/list_setting_sales_invoice.js"
 	}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
