@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2022-10-21 23:25:03.225389",
@@ -473,10 +472,8 @@
    "label": "Sales Order Created By"
   }
  ],
- "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2022-10-30 09:29:38.285394",
+ "modified": "2022-10-30 10:13:09.363609",
  "modified_by": "Administrator",
  "module": "Alamre Cost",
  "name": "Cost Planning",
@@ -493,7 +490,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
@@ -509,7 +505,6 @@
    "read": 1,
    "report": 1,
    "role": "All",
-   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
