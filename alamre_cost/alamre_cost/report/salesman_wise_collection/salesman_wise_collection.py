@@ -22,15 +22,15 @@ def execute(filters=None):
 	for d in entries:
 		invoice = invoice_details.get(d.against_voucher) or frappe._dict()
 
-		if d.reference_type == "Purchase Invoice":
-			payment_amount = flt(d.debit) or -1 * flt(d.credit)
-		else:
-			payment_amount = flt(d.credit) or -1 * flt(d.debit)
+		# if d.reference_type == "Purchase Invoice":
+		# 	payment_amount = flt(d.debit) or -1 * flt(d.credit)
+		# else:
+		# 	payment_amount = flt(d.credit) or -1 * flt(d.debit)
 
-		d.update({"range1": 0, "range2": 0, "range3": 0, "range4": 0, "outstanding": payment_amount})
+		# d.update({"range1": 0, "range2": 0, "range3": 0, "range4": 0, "outstanding": payment_amount})
 
-		if d.against_voucher:
-			ReceivablePayableReport(filters).get_ageing_data(invoice.posting_date, d)
+		# if d.against_voucher:
+		# 	ReceivablePayableReport(filters).get_ageing_data(invoice.posting_date, d)
 
 		row = [
 			invoice.order_created_user_name,
@@ -38,8 +38,8 @@ def execute(filters=None):
 			d.credit
 		]
 
-		if invoice.due_date:
-			row.append((getdate(d.posting_date) - getdate(invoice.due_date)).days or 0)
+		# if invoice.due_date:
+		# 	row.append((getdate(d.posting_date) - getdate(invoice.due_date)).days or 0)
 
 		data.append(row)
 	
